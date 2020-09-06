@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activity.RoverPhotosActivity">
+
+
+    <EditText
+        android:id="@+id/etSol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/enter_martian_sol"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:importantForAutofill="no" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivSearch"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSol"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:drawableStart="@drawable/ic_round_send_24"
+        android:drawableLeft="@drawable/ic_round_send_24"
+        android:drawableTint="@android:color/black"
+        android:gravity="start|center"
+        android:text="@string/search"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvMartinSolInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivSearch"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/martina_sol_info"
+        android:textAllCaps="true"
+        android:textColor="#0F46E8"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvMartinSolInfo" />
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:background="@android:color/black"
+    >
+
+    <include
+        android:id="@+id/includeBackground"
+        layout="@layout/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select a Rover"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold|italic"
+        android:layout_above="@id/nestedScrollView"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:id="@+id/goToCuriosity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="122dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/curiosity" />
+
+                    <TextView
+                        android:id="@+id/tvCuriosity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="CURIOSITY"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:id="@+id/goToOpportunity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/goToCuriosity"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="112dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/opportunity"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvOpportunity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="OPPORTUNITY"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/goToOpportunity"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="112dp"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="false"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/spirit" />
+
+                    <TextView
+                        android:id="@+id/tvSpirit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="SPIRIT"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_on_secondary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:subtitle="See Photo Of Mars"
+        app:subtitleTextColor="#FFFFFF"
+        app:title="Mars Photo Viewer"
+        app:titleTextColor="#FFFFFF" />
+
+
+</RelativeLayout>

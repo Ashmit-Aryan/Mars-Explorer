@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.FragmentPhotos">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="84dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rvPhotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSetting"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="30dp"
+        app:fabSize="normal"
+        app:backgroundTint="#FF000000"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:srcCompat="@drawable/ic_outline_info_24"
+        android:clickable="true"
+        android:focusable="true" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

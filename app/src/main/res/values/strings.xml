@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name" translatable="false">Mars Explorer</string>
+    <string name="martin_sol" translatable="false">Martian sol :-</string>
+    <string name="earth_date" translatable="false">Earth Date:-</string>
+    <string name="camera" translatable="false">Camera :-</string>
+    <string name="photo_id" translatable="false">Photo Id:-</string>
+    <string name="rover_name" translatable="false">Rover Name :-</string>
+    <string name="status" translatable="false">Status:-</string>
+    <string name="max_sol" translatable="false">Max sol :-</string>
+    <string name="launch_date" translatable="false">Launch Date:-</string>
+    <string name="landing_date" translatable="false">Landing Date:-</string>
+    <string name="total_photos" translatable="false">Total Photos:-</string>
+    <string name="max_earth_date" translatable="false">Max Earth Date:-</string>
+    <string name="search" translatable="false">Search</string>
+    <string name="enter_martian_sol" translatable="false">Enter Martian sol</string>
+    <string name="martina_sol_info" translatable="false">Don\'t Know What is Martian Sol ?? Click Here !!</string>
+</resources>
