@@ -14,6 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:hint="@string/enter_martian_sol"
         android:inputType="number"
         android:textColor="@android:color/black"
@@ -22,9 +24,8 @@
         android:textStyle="bold|italic"
         android:importantForAutofill="no" />
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/ivSearch"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/etSol"

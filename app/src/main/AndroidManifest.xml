@@ -21,7 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.RoverPhotosActivity" />
-        <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".Activity.MainActivity">
+
+        </activity>
     </application>
 
 </manifest>

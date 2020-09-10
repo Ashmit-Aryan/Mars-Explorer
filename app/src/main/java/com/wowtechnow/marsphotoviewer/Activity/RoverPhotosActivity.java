@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,17 +41,7 @@ public class RoverPhotosActivity extends AppCompatActivity {
                     .commit();
         });
         findViewById(R.id.tvMartinSolInfo).setOnClickListener(v ->{
-            AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
-            builder.setTitle("About Martina Sol");
-            builder.setMessage("Martina sol is 1 day on Mars \n " +
-                    "668 sol = 1 year on Mars " +
-                    "\n You need To enter the sol on which the rover has send photos \n" +
-                    " Example:- If you enter 1 sol then the Photos clicked by rover's first day on mars will be displayed");
-
-            builder.setPositiveButton("OK!!", (dialog, which) -> {
-                builder.create().dismiss();
-            });
-            builder.create().show();
+            Toast.makeText(this,"Comming Soon",Toast.LENGTH_LONG).show();
         });
     }
 

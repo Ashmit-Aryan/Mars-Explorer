@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,12 +21,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.activity_main,null,false);
-        setContentView(view);
+        setContentView(R.layout.activity_main);
         rover = new Intent(getApplicationContext(), RoverPhotosActivity.class);
 
         if (!isNetworkAvailable(getApplicationContext())){
-            Snackbar.make(view,"Please Switch On Internet !!",Snackbar.LENGTH_LONG).show();
+            Toast.makeText(this, "Please Make Sure Of Internet", Toast.LENGTH_SHORT).show();
             return;
         }
         findViewById(R.id.tvCuriosity).setOnClickListener(v -> {

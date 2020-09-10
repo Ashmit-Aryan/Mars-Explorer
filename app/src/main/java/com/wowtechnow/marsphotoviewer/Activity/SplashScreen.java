@@ -27,7 +27,6 @@ public class SplashScreen extends AppCompatActivity {
         public void run(){
             try {
                 sleep(1000*5);
-                progressBar.setVisibility(GONE);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
